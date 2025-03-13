@@ -1,11 +1,10 @@
-u=5* math.sqrt((25+ math.sqrt(136))/0.00034)
-v=math.tan(math.cos(math.pi/5)+ math.cos(2* math.pi/5))*math.log(5)
-P1=(math.exp(-u)+math.exp(v0/(2*u+3*v)
-c_1=2*u<v
-c_2=2*u>=v
-print(u)
-print(v)
-print(P1)
-print(P2)
-print(Sert 2u<v:{c_1})
-print(Sert2u>=v: {c_2})
+import math  
+
+u = 5 * math.sqrt((25 + math.sqrt(136)) / 0.00034)
+v = math.tan(math.cos(math.pi / 5) + math.cos(2 * math.pi / 5)) * math.log(5)
+
+P = (math.exp(-u) + math.exp(-v)) / (2 * abs(u) + 3 * abs(v)) if 2 * abs(u) < v else u + v
+
+print(f"u = {u:.5f}")
+print(f"v = {v:.5f}")
+print(f"P = {P:.5f}")
