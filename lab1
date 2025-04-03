@@ -1,6 +1,6 @@
 import math  
 
-u = 5 * math.sqrt((25 + math.sqrt(136)) / 0.00034)
+u = math.sqrt((25 + math.sqrt(136)) / 0.00034)
 v = math.tan(math.cos(math.pi / 5) + math.cos(2 * math.pi / 5)) * math.log(5)
 
 P = (math.exp(-u) + math.exp(-v)) / (2 * abs(u) + 3 * abs(v)) if 2 * abs(u) < v else u + v
